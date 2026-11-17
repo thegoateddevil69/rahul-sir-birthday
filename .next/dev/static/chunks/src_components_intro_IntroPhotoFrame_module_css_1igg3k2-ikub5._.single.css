@@ -1,0 +1,110 @@
+/* [project]/src/components/intro/IntroPhotoFrame.module.css [app-client] (css) */
+.IntroPhotoFrame-module__O3Ds-W__anchor {
+  --rim: 0;
+  --frame-rotate: 0deg;
+  visibility: hidden;
+  opacity: 0;
+  transform-origin: 0 0;
+  will-change: transform, opacity, filter;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.IntroPhotoFrame-module__O3Ds-W__frame {
+  transform: translate(-50%, -50%) rotate(var(--frame-rotate));
+  transform-origin: center;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.IntroPhotoFrame-module__O3Ds-W__matte {
+  min-height: 0;
+  box-shadow: 0 0 calc(18px + var(--rim) * 42px) rgba(167, 139, 250, calc(.1 + var(--rim) * .26)),
+    0 26px 54px -26px #000000d9,
+    inset 0 0 0 1px #f5dda347;
+  background: linear-gradient(150deg, #181b2cf5, #0a0c16f5);
+  border: 1px solid #e6c07bb8;
+  border-radius: 3px;
+  flex: 1;
+  padding: 10px;
+  position: relative;
+}
+
+.IntroPhotoFrame-module__O3Ds-W__matte:after {
+  content: "";
+  pointer-events: none;
+  border: 1px solid #e6c07b47;
+  border-radius: 2px;
+  position: absolute;
+  inset: 5px;
+}
+
+.IntroPhotoFrame-module__O3Ds-W__imageWrap {
+  background: #0b0d12;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.IntroPhotoFrame-module__O3Ds-W__image {
+  object-fit: cover;
+  filter: sepia(.16) saturate(.92) contrast(1.04) brightness(1.02);
+}
+
+.IntroPhotoFrame-module__O3Ds-W__innerShade {
+  pointer-events: none;
+  background: linear-gradient(#00000038, #0000 28% 72%, #0000004d), radial-gradient(120% 90%, #0000 45%, #00000047 100%);
+  position: absolute;
+  inset: 0;
+}
+
+.IntroPhotoFrame-module__O3Ds-W__caption {
+  font-family: var(--font-sans);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #f5dda3cc;
+  text-shadow: 0 2px 12px #000000e6;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+  font-weight: 500;
+  display: flex;
+}
+
+.IntroPhotoFrame-module__O3Ds-W__captionIndex {
+  color: #b990f5;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 768px) {
+  .IntroPhotoFrame-module__O3Ds-W__frame {
+    gap: 7px;
+  }
+
+  .IntroPhotoFrame-module__O3Ds-W__matte {
+    padding: 7px;
+  }
+
+  .IntroPhotoFrame-module__O3Ds-W__matte:after {
+    inset: 3px;
+  }
+
+  .IntroPhotoFrame-module__O3Ds-W__caption {
+    letter-spacing: .12em;
+    font-size: 9px;
+  }
+}
+
+/*# sourceMappingURL=src_components_intro_IntroPhotoFrame_module_css_1igg3k2-ikub5._.single.css.map*/

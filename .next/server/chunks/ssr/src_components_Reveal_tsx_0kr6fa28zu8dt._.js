@@ -1,0 +1,3 @@
+module.exports=[349,a=>{"use strict";var b=a.i(87924),c=a.i(46271),d=a.i(21216),e=a.i(68114);a.s(["default",0,function({children:a,className:f,delay:g=0,y:h=18,once:i=!0}){let j=(0,d.f)();return(0,b.jsx)(c.f.div,{className:(0,e.f)(f),initial:!j&&{opacity:0,y:h},whileInView:{opacity:1,y:0},viewport:{once:i,amount:.18},transition:{duration:.7,delay:g,ease:[.22,.61,.36,1]},children:a})}])}];
+
+//# sourceMappingURL=src_components_Reveal_tsx_0kr6fa28zu8dt._.js.map

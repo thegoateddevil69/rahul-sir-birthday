@@ -1,0 +1,199 @@
+/* [project]/src/components/Navbar.module.css [app-client] (css) */
+.Navbar-module__cJzEcG__header {
+  z-index: 60;
+  -webkit-backdrop-filter: blur(16px) saturate(1.1);
+  backdrop-filter: blur(16px) saturate(1.1);
+  transition: border-color .3s var(--ease-out),
+    background .3s var(--ease-out);
+  background: #05070db8;
+  border-bottom: 1px solid #0000;
+  position: sticky;
+  top: 0;
+}
+
+.Navbar-module__cJzEcG__scrolled {
+  border-bottom-color: var(--line-soft);
+  background: #05070de0;
+}
+
+.Navbar-module__cJzEcG__inner {
+  width: min(1240px, 100%);
+  height: var(--nav-height);
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 48px);
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__brand {
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  display: inline-flex;
+}
+
+.Navbar-module__cJzEcG__monogram {
+  border: 1px solid var(--gold);
+  width: 42px;
+  height: 42px;
+  font-family: var(--font-serif);
+  color: var(--gold-deep);
+  background: radial-gradient(circle at 32% 28%, #e8f1ff0f, var(--ivory-soft));
+  box-shadow: inset 0 0 0 3px var(--ivory);
+  border-radius: 50%;
+  flex-shrink: 0;
+  place-items: center;
+  font-size: 23px;
+  font-style: italic;
+  line-height: 1;
+  display: grid;
+}
+
+.Navbar-module__cJzEcG__brandText {
+  flex-direction: column;
+  line-height: 1.1;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__brandName {
+  font-family: var(--font-serif);
+  letter-spacing: -.01em;
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.Navbar-module__cJzEcG__brandSub {
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 3px;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.Navbar-module__cJzEcG__desktopNav {
+  align-items: center;
+  gap: 4px;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__navLink {
+  letter-spacing: .01em;
+  color: var(--ink-soft);
+  transition: color .25s var(--ease-out), background .25s var(--ease-out);
+  border-radius: 999px;
+  padding: 9px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+}
+
+.Navbar-module__cJzEcG__navLink:after {
+  content: "";
+  background: var(--gold);
+  width: 4px;
+  height: 4px;
+  transition: transform .25s var(--ease-out);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+}
+
+.Navbar-module__cJzEcG__navLink:hover {
+  color: var(--ink);
+  background: #e6c07b12;
+}
+
+.Navbar-module__cJzEcG__active {
+  color: var(--ink);
+}
+
+.Navbar-module__cJzEcG__active:after {
+  transform: translateX(-50%) scale(1);
+}
+
+.Navbar-module__cJzEcG__menuButton {
+  border: 1px solid var(--line);
+  width: 42px;
+  height: 42px;
+  color: var(--ink);
+  background: var(--ivory-soft);
+  transition: background .2s var(--ease-out), border-color .2s var(--ease-out);
+  border-radius: 50%;
+  place-items: center;
+  display: none;
+}
+
+.Navbar-module__cJzEcG__menuButton:hover {
+  border-color: var(--gold);
+  background: var(--cream);
+}
+
+.Navbar-module__cJzEcG__mobileMenu {
+  background: var(--ivory-soft);
+  border-bottom: 1px solid var(--line);
+  padding: 10px clamp(20px, 4vw, 48px) 28px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  box-shadow: 0 30px 60px -40px #02061780;
+}
+
+.Navbar-module__cJzEcG__mobileNav {
+  flex-direction: column;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__mobileLink {
+  border-bottom: 1px solid var(--line-soft);
+  font-family: var(--font-serif);
+  letter-spacing: -.015em;
+  color: var(--ink);
+  align-items: baseline;
+  gap: 18px;
+  padding: 14px 4px;
+  font-size: 27px;
+  display: flex;
+}
+
+.Navbar-module__cJzEcG__mobileActive {
+  color: var(--gold-deep);
+}
+
+.Navbar-module__cJzEcG__mobileIndex {
+  font-family: var(--font-sans);
+  letter-spacing: .18em;
+  color: var(--gold);
+  font-size: 10px;
+}
+
+.Navbar-module__cJzEcG__mobileNote {
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 20px;
+  font-size: 11px;
+}
+
+@media (max-width: 880px) {
+  .Navbar-module__cJzEcG__desktopNav {
+    display: none;
+  }
+
+  .Navbar-module__cJzEcG__menuButton {
+    display: grid;
+  }
+}
+
+@media (max-width: 460px) {
+  .Navbar-module__cJzEcG__brandSub {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_components_Navbar_module_css_1igg3k2-ikub5._.single.css.map*/

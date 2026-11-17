@@ -1,0 +1,272 @@
+/* [project]/src/components/HeroArt.module.css [app-client] (css) */
+.HeroArt-module__DeSOFW__art {
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  position: relative;
+}
+
+.HeroArt-module__DeSOFW__panel {
+  aspect-ratio: 1 / 1.08;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  background: radial-gradient(80% 80% at 30% 20%, #0d1320e6, #0000 60%), linear-gradient(155deg, #10192b, #0b1220);
+  place-items: center;
+  padding: clamp(24px, 4vw, 40px);
+  display: grid;
+  position: relative;
+}
+
+.HeroArt-module__DeSOFW__grid {
+  opacity: .7;
+  background-image: linear-gradient(to right, #94a3b812 1px, #0000 1px), linear-gradient(#94a3b812 1px, #0000 1px);
+  background-size: 46px 46px;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: radial-gradient(85% 80%, #000, #0000 78%);
+  mask-image: radial-gradient(85% 80%, #000, #0000 78%);
+}
+
+.HeroArt-module__DeSOFW__orbit {
+  aspect-ratio: 1;
+  border: 1px solid #e6c07b47;
+  border-radius: 50%;
+  width: 78%;
+  position: absolute;
+  transform: rotate(-18deg) scaleY(.72);
+}
+
+.HeroArt-module__DeSOFW__orbitInner {
+  aspect-ratio: 1;
+  border: 1px dashed #e6c07b4d;
+  border-radius: 50%;
+  width: 58%;
+  position: absolute;
+  transform: rotate(24deg) scaleY(.8);
+}
+
+.HeroArt-module__DeSOFW__cardFrame {
+  z-index: 2;
+  width: 76%;
+  position: relative;
+  transform: rotate(-1.6deg);
+}
+
+.HeroArt-module__DeSOFW__card {
+  border: 1px solid var(--gold);
+  background: radial-gradient(120% 90% at 50% 0%, #e8f1ff0f, transparent 60%),
+    var(--cream);
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(30px, 4vw, 44px) clamp(18px, 3vw, 30px);
+  display: flex;
+  position: relative;
+  box-shadow: 0 26px 60px -30px #02061780, inset 0 0 0 1px #0d1320cc;
+}
+
+.HeroArt-module__DeSOFW__card:before {
+  content: "";
+  pointer-events: none;
+  border: 1px solid #e6c07b38;
+  position: absolute;
+  inset: 7px;
+}
+
+.HeroArt-module__DeSOFW__cornerTop, .HeroArt-module__DeSOFW__cornerBottom {
+  border-color: var(--gold);
+  opacity: .8;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+}
+
+.HeroArt-module__DeSOFW__cornerTop {
+  border-top: 1px solid;
+  border-left: 1px solid;
+  top: 16px;
+  left: 16px;
+}
+
+.HeroArt-module__DeSOFW__cornerBottom {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  bottom: 16px;
+  right: 16px;
+}
+
+.HeroArt-module__DeSOFW__kicker {
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-size: 8.5px;
+  font-weight: 600;
+}
+
+.HeroArt-module__DeSOFW__monogramWrap {
+  place-items: center;
+  width: clamp(96px, 12vw, 124px);
+  height: clamp(96px, 12vw, 124px);
+  margin: clamp(18px, 2.6vw, 26px) 0 clamp(14px, 2vw, 20px);
+  display: grid;
+  position: relative;
+}
+
+.HeroArt-module__DeSOFW__monogramRing {
+  border: 1px solid var(--gold-light);
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+}
+
+.HeroArt-module__DeSOFW__monogramRing:after {
+  content: "";
+  border: 1px dashed #e6c07b73;
+  border-radius: 50%;
+  position: absolute;
+  inset: 7px;
+}
+
+.HeroArt-module__DeSOFW__monogram {
+  font-family: var(--font-serif);
+  color: var(--gold-deep);
+  font-size: clamp(52px, 7vw, 68px);
+  font-style: italic;
+  line-height: 1;
+  transform: translateY(-2px);
+}
+
+.HeroArt-module__DeSOFW__name {
+  font-family: var(--font-serif);
+  letter-spacing: -.02em;
+  color: var(--ink);
+  font-size: clamp(27px, 3.4vw, 36px);
+  line-height: 1.1;
+}
+
+.HeroArt-module__DeSOFW__subject {
+  font-family: var(--font-serif);
+  color: var(--muted);
+  margin-top: 8px;
+  font-size: clamp(12px, 1.5vw, 14px);
+  font-style: italic;
+}
+
+.HeroArt-module__DeSOFW__rule {
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin: clamp(18px, 2.4vw, 24px) 0 clamp(14px, 2vw, 18px);
+  display: flex;
+}
+
+.HeroArt-module__DeSOFW__rule > span:first-child, .HeroArt-module__DeSOFW__rule > span:last-child {
+  background: var(--gold-light);
+  opacity: .55;
+  flex: 1;
+  height: 1px;
+}
+
+.HeroArt-module__DeSOFW__ruleGlyphs {
+  letter-spacing: .16em;
+  color: var(--gold-deep);
+  white-space: nowrap;
+  font-size: 10px;
+}
+
+.HeroArt-module__DeSOFW__date {
+  letter-spacing: .3em;
+  color: var(--ink-soft);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.HeroArt-module__DeSOFW__from {
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 10px;
+  font-size: 8.5px;
+  font-weight: 600;
+}
+
+.HeroArt-module__DeSOFW__glyph {
+  z-index: 3;
+  border: 1px solid var(--gold-light);
+  background: var(--cream);
+  width: clamp(38px, 4.4vw, 48px);
+  height: clamp(38px, 4.4vw, 48px);
+  color: var(--gold-deep);
+  font-family: var(--font-serif);
+  border-radius: 50%;
+  place-items: center;
+  font-size: clamp(15px, 1.8vw, 19px);
+  font-style: italic;
+  display: grid;
+  position: absolute;
+  box-shadow: 0 12px 28px -18px #02061773;
+}
+
+.HeroArt-module__DeSOFW__glyphA {
+  top: 7%;
+  left: 4%;
+}
+
+.HeroArt-module__DeSOFW__glyphB {
+  font-family: var(--font-sans);
+  letter-spacing: .02em;
+  font-size: 11px;
+  font-style: normal;
+  top: 30%;
+  right: 0%;
+}
+
+.HeroArt-module__DeSOFW__glyphC {
+  font-size: clamp(18px, 2vw, 22px);
+  bottom: 12%;
+  left: 1%;
+}
+
+.HeroArt-module__DeSOFW__sideNote {
+  writing-mode: vertical-rl;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: #94a3b85c;
+  font-size: 7.5px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 26px;
+  left: 12px;
+  transform: rotate(180deg);
+}
+
+.HeroArt-module__DeSOFW__caption {
+  text-align: center;
+  font-family: var(--font-serif);
+  color: var(--muted);
+  margin-top: 22px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+@media (max-width: 960px) {
+  .HeroArt-module__DeSOFW__art {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .HeroArt-module__DeSOFW__art {
+    max-width: 380px;
+  }
+
+  .HeroArt-module__DeSOFW__cardFrame {
+    width: 79%;
+  }
+
+  .HeroArt-module__DeSOFW__sideNote {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_components_HeroArt_module_css_1igg3k2-ikub5._.single.css.map*/

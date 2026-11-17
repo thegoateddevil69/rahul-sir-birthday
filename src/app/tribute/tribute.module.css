@@ -1,0 +1,341 @@
+.page {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(60px, 8vw, 96px) 0 clamp(40px, 6vw, 72px);
+}
+
+.page::before {
+  content: "R";
+  position: absolute;
+  top: -0.1em;
+  right: -0.06em;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(22rem, 45vw, 44rem);
+  line-height: 1;
+  color: var(--gold);
+  opacity: 0.035;
+  pointer-events: none;
+  user-select: none;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  width: min(860px, 100%);
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 48px);
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  text-align: center;
+}
+
+.rule {
+  width: 34px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.65;
+}
+
+.title {
+  margin-top: 28px;
+  text-align: center;
+  font-size: clamp(3rem, 7vw, 5.6rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.title em {
+  font-style: italic;
+  color: var(--gold-deep);
+}
+
+.date {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.letter {
+  margin-top: clamp(44px, 6vw, 72px);
+  padding: clamp(34px, 5vw, 64px) clamp(26px, 5vw, 64px);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(13, 19, 32, 0.9), transparent 60%),
+    var(--cream);
+  box-shadow: var(--shadow-card);
+}
+
+.letter p {
+  font-size: clamp(15px, 1.2vw, 17px);
+  line-height: 1.95;
+  color: var(--ink-soft);
+}
+
+.letter p + p {
+  margin-top: 1.45em;
+}
+
+.letter p:first-of-type::first-letter {
+  float: left;
+  margin: 0.08em 0.12em 0 0;
+  font-family: var(--font-serif);
+  font-size: 4.2em;
+  line-height: 0.78;
+  color: var(--gold-deep);
+}
+
+.closing {
+  color: var(--ink);
+}
+
+.signoff {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.signRule {
+  width: 34px;
+  height: 1px;
+  margin-top: 0.8em;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+.signoff p {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.signoff strong {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.classSection,
+.namesSection {
+  margin-top: clamp(60px, 8vw, 96px);
+}
+
+.classHead,
+.namesHead {
+  margin-bottom: 24px;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+.smallRule {
+  width: 26px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.6;
+}
+
+.sectionTitle {
+  margin-top: 14px;
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.photoFrame {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(90% 120% at 50% 20%, rgba(13, 19, 32, 0.95), transparent 65%),
+    linear-gradient(150deg, #10192b, #0b1220);
+  box-shadow: var(--shadow-soft);
+}
+
+.photoFrame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.6;
+}
+
+.photoInner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: clamp(260px, 40vw, 420px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.photoInner::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(230, 192, 123, 0.28);
+  pointer-events: none;
+}
+
+.photoGlyph {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(3rem, 6vw, 4.6rem);
+  line-height: 1;
+  color: var(--gold-deep);
+  opacity: 0.5;
+}
+
+.photoTitle {
+  margin-top: 18px;
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  color: var(--ink);
+}
+
+.photoText {
+  max-width: 42ch;
+  margin-top: 10px;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.namesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.nameItem {
+  padding: 16px 18px;
+  border: 1px solid var(--line-soft);
+  background: var(--cream);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.namesNote {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.finale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: clamp(64px, 9vw, 110px);
+  padding-top: clamp(40px, 6vw, 64px);
+  border-top: 1px solid var(--line-soft);
+  text-align: center;
+}
+
+.heart {
+  color: var(--gold);
+}
+
+.finaleText {
+  margin-top: 18px;
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.finaleText em {
+  font-style: italic;
+  color: var(--gold-deep);
+}
+
+.finaleSub {
+  margin-top: 10px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.homeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  transition:
+    color 0.25s var(--ease-out),
+    border-color 0.25s var(--ease-out),
+    background 0.25s var(--ease-out),
+    gap 0.25s var(--ease-out);
+}
+
+.homeLink:hover {
+  color: var(--ink);
+  border-color: var(--gold);
+  background: var(--cream);
+  gap: 11px;
+}
+
+@media (max-width: 760px) {
+  .namesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .letter p:first-of-type::first-letter {
+    font-size: 3.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .namesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .letter {
+    padding: 28px 22px 34px;
+  }
+}

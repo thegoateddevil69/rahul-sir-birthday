@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img">
+  
+  <defs>
+    <linearGradient id="bg-107" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08101d"/>
+      <stop offset="100%" stop-color="#121c33"/>
+    </linearGradient>
+    <radialGradient id="glow-107" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#5b9cff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#5b9cff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-107" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M52 0H0V52" fill="none" stroke="#5b9cff" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg-107)"/>
+  <rect width="1280" height="720" fill="url(#grid-107)"/>
+  <rect width="1280" height="720" fill="url(#glow-107)"/>
+  <rect x="26" y="26" width="1228" height="668" fill="none" stroke="#5b9cff" stroke-opacity="0.38"/>
+  <circle cx="640" cy="330" r="156" fill="none" stroke="#5b9cff" stroke-opacity="0.3"/>
+  <circle cx="640" cy="330" r="184" fill="none" stroke="#a78bfa" stroke-opacity="0.16" stroke-dasharray="2 10"/>
+  <text x="640" y="398" text-anchor="middle" font-family="monospace" font-weight="600" font-size="160" fill="#5b9cff" fill-opacity="0.5">{ }</text>
+  <text x="62" y="82" font-family="monospace" font-size="20" letter-spacing="4" fill="#b7c7e6" fill-opacity="0.85">A MESSAGE FOR RAHUL SIR</text>
+  <text x="1218" y="82" text-anchor="end" font-family="monospace" font-size="18" letter-spacing="3" fill="#7f93b8" fill-opacity="0.9">08</text>
+  <line x1="62" y1="632" x2="1218" y2="632" stroke="#5b9cff" stroke-opacity="0.32"/>
+  <text x="62" y="676" font-family="monospace" font-size="20" letter-spacing="4" fill="#b7c7e6" fill-opacity="0.85">STUDENT 08</text>
+  <text x="1218" y="676" text-anchor="end" font-family="monospace" font-size="18" letter-spacing="3" fill="#7f93b8" fill-opacity="0.9">VIDEO MESSAGE</text>
+</svg>

@@ -1,0 +1,183 @@
+/* [project]/src/components/IntroAnimation.module.css [app-client] (css) */
+.IntroAnimation-module__E4b-pa__overlay {
+  z-index: 120;
+  color: #f4ecdf;
+  background: radial-gradient(120% 100% at 50% 42%, #0a0c16 0%, #060811 48%, #030409 100%);
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+.IntroAnimation-module__E4b-pa__scene {
+  transform-origin: center;
+  will-change: opacity, transform, filter;
+  position: absolute;
+  inset: -2%;
+}
+
+.IntroAnimation-module__E4b-pa__particles {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.IntroAnimation-module__E4b-pa__warmGlow {
+  mix-blend-mode: screen;
+  pointer-events: none;
+  background: radial-gradient(760px 520px at 18% 22%, #e6c07b29, #0000 62%), radial-gradient(680px 480px at 82% 70%, #a78bfa29, #0000 64%), radial-gradient(900px 620px at 50% 55%, #5b9cff1a, #0000 70%);
+  position: absolute;
+  inset: 0;
+}
+
+.IntroAnimation-module__E4b-pa__vignette {
+  pointer-events: none;
+  background: radial-gradient(115% 95% at 50% 45%, #0000 36%, #0006 72%, #000000d1 100%), linear-gradient(#00000047, #0000 22% 76%, #0000006b);
+  position: absolute;
+  inset: 0;
+}
+
+.IntroAnimation-module__E4b-pa__grain {
+  opacity: .035;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  position: absolute;
+  inset: 0;
+}
+
+.IntroAnimation-module__E4b-pa__photos {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
+.IntroAnimation-module__E4b-pa__finaleCenter {
+  z-index: 3;
+  pointer-events: none;
+  place-items: center;
+  padding: 24px;
+  display: grid;
+  position: absolute;
+  inset: 0;
+}
+
+.IntroAnimation-module__E4b-pa__finale {
+  text-align: center;
+  will-change: opacity, transform;
+  width: min(760px, 100%);
+}
+
+.IntroAnimation-module__E4b-pa__kicker {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  color: #f5dda3e6;
+  background: #a78bfa17;
+  border: 1px solid #e6c07b57;
+  border-radius: 999px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 7px 14px;
+  font-size: 11px;
+  font-weight: 500;
+  display: inline-flex;
+}
+
+.IntroAnimation-module__E4b-pa__name {
+  font-family: var(--font-serif);
+  letter-spacing: -.045em;
+  background: linear-gradient(102deg, #fff5e0 0%, #e6c07b 34%, #b990f5 68%, #86a9ff 100%);
+  color: #0000;
+  filter: drop-shadow(0 0 34px #a78bfa47);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 0;
+  font-size: clamp(3.4rem, 10vw, 8rem);
+  font-weight: 600;
+  line-height: .94;
+}
+
+.IntroAnimation-module__E4b-pa__heading {
+  font-family: var(--font-serif);
+  letter-spacing: .01em;
+  color: #f4e8d6eb;
+  margin: 18px 0 0;
+  font-size: clamp(1.35rem, 3.4vw, 2.5rem);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.IntroAnimation-module__E4b-pa__dates {
+  font-family: var(--font-sans);
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: #e6c07bd9;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 26px;
+  font-size: clamp(11px, 1.5vw, 13px);
+  font-weight: 500;
+  display: flex;
+}
+
+.IntroAnimation-module__E4b-pa__skip {
+  z-index: 5;
+  font-family: var(--font-sans);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #eedbbfad;
+  transition: color .25s var(--ease-out), border-color .25s var(--ease-out);
+  border-bottom: 1px solid #eedbbf47;
+  padding: 8px 2px;
+  font-size: 11px;
+  font-weight: 500;
+  position: absolute;
+  top: 26px;
+  right: 30px;
+}
+
+.IntroAnimation-module__E4b-pa__skip:hover, .IntroAnimation-module__E4b-pa__skip:focus-visible {
+  color: #f5dda3;
+  border-bottom-color: #f5dda3bf;
+}
+
+.IntroAnimation-module__E4b-pa__progress {
+  z-index: 5;
+  transform-origin: 0;
+  background: linear-gradient(90deg, #e6c07b4d, #e6c07b 32%, #a78bfa 68%, #5b9cff);
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  box-shadow: 0 0 14px #a78bfa73;
+}
+
+@media (max-width: 768px) {
+  .IntroAnimation-module__E4b-pa__skip {
+    letter-spacing: .12em;
+    font-size: 10px;
+    top: 18px;
+    right: 18px;
+  }
+
+  .IntroAnimation-module__E4b-pa__name {
+    font-size: clamp(2.9rem, 15vw, 5.2rem);
+  }
+
+  .IntroAnimation-module__E4b-pa__dates {
+    margin-top: 20px;
+  }
+
+  .IntroAnimation-module__E4b-pa__kicker {
+    margin-bottom: 14px;
+    font-size: 9px;
+  }
+}
+
+/*# sourceMappingURL=src_components_IntroAnimation_module_css_1igg3k2-ikub5._.single.css.map*/

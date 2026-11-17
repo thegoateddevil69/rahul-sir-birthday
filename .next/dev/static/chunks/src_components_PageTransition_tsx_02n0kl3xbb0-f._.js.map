@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/darsh/Desktop/rahul-sir-birthday/src/components/PageTransition.tsx"],"sourcesContent":["\"use client\";\n\nimport { motion, useReducedMotion } from \"framer-motion\";\n\nexport default function PageTransition({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  const reduceMotion = useReducedMotion();\n\n  return (\n    <motion.div\n      initial={reduceMotion ? false : { opacity: 0, y: 12 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.55, ease: [0.22, 0.61, 0.36, 1] }}\n    >\n      {children}\n    </motion.div>\n  );\n}\n"],"names":["PageTransition","children","reduceMotion","div","initial","opacity","y","animate","transition","duration","ease"],"mappings":";;;;;AAEA;AAAA;;;AAFA;;AAIe,SAASA,eAAe,EACrCC,QAAQ,EAGT;;IACC,MAAMC,eAAe,IAAA,gOAAgB;IAErC,qBACE,6LAAC,uMAAM,CAACC,GAAG;QACTC,SAASF,eAAe,QAAQ;YAAEG,SAAS;YAAGC,GAAG;QAAG;QACpDC,SAAS;YAAEF,SAAS;YAAGC,GAAG;QAAE;QAC5BE,YAAY;YAAEC,UAAU;YAAMC,MAAM;gBAAC;gBAAM;gBAAM;gBAAM;aAAE;QAAC;kBAEzDT;;;;;;AAGP;GAhBwBD;;QAKD,gOAAgB;;;KALfA"}}]
+}
